@@ -1,0 +1,11 @@
+.sign-in{
+	border: 1px solid #ccc;
+	border-radius: 16px;
+	padding: 24px;
+	background-color: var(--form-background);
+}
+
+.title{
+	margin-bottom: 16px;
+	text-align: center;
+}
