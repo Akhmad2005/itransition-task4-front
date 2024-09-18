@@ -24,7 +24,7 @@ const App: React.FC = () => {
   const onFinish: FormProps<FieldType>['onFinish'] = async (values) => {
     setFormType(true)
     try {
-      const res = await fetch('http://localhost:5000/api/auth/login', 
+      const res = await fetch('https://itransition-task4-back-pvx5.vercel.app/api/auth/login', 
         {
           method: 'post', body: JSON.stringify(values), 
           headers: {'Content-Type': 'application/json'}

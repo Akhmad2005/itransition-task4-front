@@ -75,7 +75,7 @@ const ClientSideFetch = () => {
 		setLoading(true);
 		try {
 			const token = getCookie('auth-token')
-			const response = await fetch('http://localhost:5000/api/users',
+			const response = await fetch('https://itransition-task4-back-pvx5.vercel.app/api/users',
 				{
 					headers: { 
 						'Content-Type': 'application/json',
@@ -120,7 +120,7 @@ const ClientSideFetch = () => {
 	const handleClickButton = async (a: ActionType) => {
 		try {
 			const token = getCookie('auth-token')
-			const response = await fetch(`http://localhost:5000/api/users/${a}`,
+			const response = await fetch(`https://itransition-task4-back-pvx5.vercel.app/api/users/${a}`,
 				{
 					method: 'POST',
           body: JSON.stringify({

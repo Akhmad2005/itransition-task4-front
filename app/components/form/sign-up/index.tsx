@@ -25,7 +25,7 @@ const App: React.FC = () => {
     let fields = values
     delete fields.confirm
     try {
-      const res = await fetch('http://localhost:5000/api/auth/register', 
+      const res = await fetch('https://itransition-task4-back-pvx5.vercel.app/api/auth/register', 
         {
           method: 'post', body: JSON.stringify(fields), 
           headers: {'Content-Type': 'application/json'}
